@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       }}
       network={network}
     >
-      <WalletProvider wallets={[wallet]}>
+      <WalletProvider wallets={[wallet]} autoConnect>
         <Component {...pageProps} />
       </WalletProvider>
     </ThirdwebProvider>
