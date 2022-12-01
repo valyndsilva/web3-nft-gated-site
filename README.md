@@ -22,7 +22,7 @@ If a user does not own an NFT from the Collection they won't have access to the 
 
 ![User without NFT](/public/gifs/user-without-nft.gif)
 
-[Expand](/public/demo/user-without-nft.gif)
+[Expand](/public/demo/user-without-nft.mp4)
 
 
 
@@ -31,4 +31,4 @@ If a user owns an NFT from the Collection they have direct access to the Members
 
 ![User with NFT](/public/gifs/user-with-nft.gif)
 
-[Expand](/public/demo/user-with-nft.gif)
+[Expand](/public/demo/user-with-nft.mp4)
