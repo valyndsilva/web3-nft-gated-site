@@ -49,7 +49,7 @@ function LoginPage() {
   // Login and redirect to homepage
   const handleLogin = async () => {
     await login();
-    router.replace("/members");
+    router.replace("/");
   };
 
   // Prompt user to make purchase of 1 nft and redirect to homepage
@@ -57,7 +57,7 @@ function LoginPage() {
     await claim({
       amount: 1,
     });
-    router.replace("/members");
+    router.replace("/");
   };
 
   return (
@@ -113,7 +113,7 @@ function LoginPage() {
 
             {usersNft && (
               <Link
-                href="/members"
+                href="/"
                 className="text-2xl font-bold mb-5 bg-black text-white py-4 px-10 border-2 border-fusbg-black animate-pulse rounded-full transition duration-200 hover:bg-white hover:text-black mt-5 uppercase"
               >
                 ACCESS GRANTED - ENTER

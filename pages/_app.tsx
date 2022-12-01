@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       authConfig={{
         authUrl: "/api/auth",
         domain: process.env.VERCEL_URL || domain,
-        loginRedirect: "/members",
+        loginRedirect: "/",
       }}
       network={network}
     >
