@@ -181,10 +181,23 @@ function LoginPage() {
   };
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center text-center bg-[#27D682]">
-      <div className="absolute top-56 left-0 w-full h-1/4 bg-white -skew-y-6 z-10 overflow-hidden shadow-xl" />
+    <div className="flex min-h-screen flex-col items-center justify-center text-center bg-[#44d681ee]">
+      {/* <div className="absolute top-48 left-0 w-full h-1/3 bg-gray-400 -skew-y-6 z-10 overflow-hidden shadow-xl" /> */}
+      <div className="absolute top-1/4 h-1/3 left-0 w-full bg-gray-400 -skew-y-6 z-10 overflow-hidden shadow-xl">
+        <div className="flex items-center w-full h-full opacity-30">
+          <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-white text-center -mx-20">
+            MEMBERS ONLY MEMBERS ONLY MEMBERS ONLY MEMBERS MEMBERS ONLY MEMBERS
+            ONLY MEMBERS ONLY MEMBERS MEMBERS ONLY MEMBERS ONLY MEMBERS ONLY
+            MEMBERS MEMBERS ONLY MEMBERS ONLY MEMBERS ONLY MEMBERS MEMBERS ONLY
+            MEMBERS ONLY MEMBERS ONLY MEMBERS MEMBERS ONLY MEMBERS ONLY MEMBERS
+            ONLY MEMBERS MEMBERS ONLY MEMBERS ONLY MEMBERS ONLY MEMBERS MEMBERS
+            ONLY MEMBERS ONLY MEMBERS ONLY MEMBERS MEMBERS ONLY MEMBERS ONLY
+            MEMBERS ONLY MEMBERS
+          </h1>
+        </div>
+      </div>
       <Image
-        className="mt-5 z-30 shadow-2xl mb-10 rounded-full"
+        className="mt-5 z-30 shadow-2xl mb-20 rounded-full"
         src="/contract-access.png"
         alt="logo"
         width={400}
@@ -199,7 +212,7 @@ function LoginPage() {
           <div>
             <button
               onClick={handleLogin}
-              className="text-2xl font-bold mb-5 bg-black text-white py-4 px-10 border-2 border-fusbg-black animate-pulse rounded-md transition duration-200 mt-5"
+              className="text-2xl font-bold mb-5 bg-black text-white py-4 px-10 border-2 border-fusbg-black animate-pulse rounded-full transition duration-200 mt-5"
             >
               Login / Connect Wallet
             </button>
@@ -212,7 +225,7 @@ function LoginPage() {
             </p>
 
             {isLoading && (
-              <div className="text-2xl font-bold mb-5 bg-black text-white py-4 px-10 border-2 border-fusbg-black animate-pulse rounded-md transition duration-200">
+              <div className="text-2xl font-bold mb-5 bg-black text-white py-4 px-10 border-2 border-fusbg-black animate-pulse rounded-full transition duration-200">
                 Hold on, We're just looking for your Creative Coding Club
                 Membership pass...
               </div>
@@ -221,7 +234,7 @@ function LoginPage() {
             {usersNft && (
               <Link
                 href="/"
-                className="text-2xl font-bold mb-5 bg-black text-white py-4 px-10 border-2 border-fusbg-black animate-pulse rounded-md transition duration-200 hover:bg-white hover:text-black mt-5 uppercase"
+                className="text-2xl font-bold mb-5 bg-black text-white py-4 px-10 border-2 border-fusbg-black animate-pulse rounded-full transition duration-200 hover:bg-white hover:text-black mt-5 uppercase"
               >
                 ACCESS GRANTED - ENTER
               </Link>
@@ -232,7 +245,7 @@ function LoginPage() {
               (unclaimedSupply && unclaimedSupply > 0 ? (
                 <button
                   onClick={handlePurchase}
-                  className="bg-black text-white py-4 px-10 border-2 border-black rounded-md hover:bg-white hover:text-black mt-5 uppercase font-bold transition duration-200"
+                  className="bg-black text-white py-4 px-10 border-2 border-black rounded-full hover:bg-white hover:text-black mt-5 uppercase font-bold transition duration-200"
                 >
                   Buy a Creative Coding Club Membership Pass
                 </button>
@@ -284,12 +297,12 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <p className="fixed top-10 text-xs md:text-base font-bold text-white bg-red-400 py-4 px-5 md:px-8 mx-10 rounded-full">
+      <p className="text-xs md:text-base font-bold text-white bg-red-400 py-4 px-5 md:px-8 mx-10 rounded-full">
         MEMBERS ONLY: This page is only accessible to users who have purchased &
         hold a Creative Coding Club NFT
       </p>
 
-      <div className="absolute top-50 left-0 w-full h-1/2 bg-transparent -skew-y-6 z-10 overflow-hidden shadow-xl">
+      <div className="absolute top-50 h-1/3 left-0 w-full bg-gray-400 -skew-y-6 z-10 overflow-hidden shadow-xl">
         <div className="flex items-center w-full h-full opacity-30">
           <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-white text-center -mx-20">
             MEMBERS ONLY MEMBERS ONLY MEMBERS ONLY MEMBERS MEMBERS ONLY MEMBERS
@@ -303,12 +316,12 @@ const Home = () => {
         </div>
       </div>
 
-      <section className="md:mb-10 z-10 space-y-2">
-        <h1 className="text-3xl lg:text-6xl font-bold">
+      <section className="md:mb-10 mt-10 z-10 space-y-2">
+        <h1 className="text-2xl lg:text-4xl font-bold">
           Introducing the <span className="text-black">Creative Coding</span>{" "}
           Club
         </h1>
-        <h2 className="text-xl lg:text-3xl">
+        <h2 className="text-xl">
           <span className="text-black font-extrabold underline decoration-black">
             Daily Creative Coding
           </span>{" "}
@@ -317,7 +330,7 @@ const Home = () => {
       </section>
 
       <Image
-        className="mt-5 z-30 shadow-2xl mb-10"
+        className="mt-5 z-30 shadow-2xl mb-10 border-2"
         src="/contract-access.png"
         alt="logo"
         width={400}
@@ -326,7 +339,7 @@ const Home = () => {
 
       <Link
         href="/"
-        className="font-extrabold text-lg md:text-2xl text-black transition duration-200 hover:underline my-5 z-50"
+        className="text-lg md:text-2xl text-black transition duration-200 hover:underline my-5 z-50"
       >
         Visit{" "}
         <span className="font-extrabold underline decoration-black text-black transiiton duration-200">
@@ -337,7 +350,7 @@ const Home = () => {
 
       <button
         onClick={logout}
-        className="bg-white text-black py-4 px-10 border-2 border-black rounded-md hover:bg-black hover:text-white mt-5 uppercase font-bold transition duration-200 z-50"
+        className="bg-gray-400 text-black py-4 px-10 border-2 border-gray-400 rounded-full hover:bg-black hover:border-black hover:text-white mt-5 uppercase font-bold transition duration-200 z-50"
       >
         Logout
       </button>
@@ -380,4 +393,3 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res }) => {
 };
 
 ```
-
