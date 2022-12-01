@@ -116,7 +116,7 @@ function LoginPage() {
                 href="/"
                 className="text-2xl font-bold mb-5 bg-black text-white py-4 px-10 border-2 border-fusbg-black animate-pulse rounded-full transition duration-200 hover:bg-white hover:text-black mt-5 uppercase"
               >
-                ACCESS GRANTED - ENTER
+                <a> ACCESS GRANTED - ENTER</a>
               </Link>
             )}
 
