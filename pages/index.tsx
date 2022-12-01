@@ -3,10 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import type { GetServerSideProps } from "next";
 import { ThirdwebSDK } from "@thirdweb-dev/sdk/solana";
-import { programAccountTypeQuery, useLogout } from "@thirdweb-dev/react/solana";
+import {useLogout } from "@thirdweb-dev/react/solana";
 import { getUser } from "../auth.config";
 import { network } from "./_app";
-import { userAgent } from "next/server";
 
 const Home = () => {
   const logout = useLogout();
